@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GROWZIO Affiliate Program - Earn 20-30% Commission</title>
+  <meta name="description" content="Join GROWZIO's Affiliate Program and earn 20-30% commission on every sale. Perfect for resellers in Pakistan." />
+  <meta name="keywords" content="affiliate program Pakistan, reseller program, earn money online, digital products commission" />
+  <meta name="author" content="GROWZIO">
+
+  <!-- Use existing styles from the main site -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+    // Use the same color scheme as the main site
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#81B441',      // Envato Green
+            secondary: '#A8E063',    // Mint Accent
+            dark: '#111111',          // Deep Black
+            lightbg: '#1A1A1A',       // Dark Gray
+            lighttext: '#FFFFFF',     // White
+            bordergray: '#CCCCCC'   // Light Gray
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Use the same CSS variables as the main site */
+    :root {
+      --primary: #81B441;      /* Brand Highlight - Envato Green */
+      --primary-dark: #6aa034;   /* Darker shade for hover */
+      --secondary: #A8E063;    /* Soft Accent - Mint Accent */
+      --secondary-dark: #8ccf4a; /* Darker shade for hover */
+      --dark: #111111;          /* Primary Background - Deep Black */
+      --light-bg: #1A1A1A;       /* Section Background - Dark Gray */
+      --light-text: #FFFFFF;     /* Text / Icons - White */
+      --border-color: #CCCCCC; /* Borders / Soft Elements - Light Gray */
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--dark); /* Use Deep Black for main background */
+      color: var(--light-text); /* Use White for primary text */
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+    
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    
+    .btn { display: inline-block; background: var(--primary); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; border: none; cursor: pointer; }
+    .btn:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(129, 180, 65, 0.2); }
+    .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: white; }
+    
+    .section { padding: 4rem 0; }
+    .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; position: relative; display: inline-block; color: var(--light-text); }
+    .section-title::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: var(--primary); border-radius: 2px; }
+    .section-subtitle { text-align: center; color: var(--border-color); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    
+    .nav-link { color: var(--light-text); text-decoration: none; transition: all 0.3s ease; }
+    .nav-link:hover { color: var(--primary); }
+    
+    .hero-section { background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.9)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdrtPXADVSWRizY1hl0pnWETn9pPkSgm6mPPMcg8PET-Gkm_Ujit6O3qXhvCykVlht0KmMoTZbcpk7jrG4skQW5uVlmYUdgOh2pV7sGyme30fu7eWW5CVDFT5E0BdKH-f6AVF9ysavlHkMrr4M_RqYbkef7_8hl47NmMoD_gZqWWHOu2fqXqWGHKgwKoI/s1920/wp2855578.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+    
+    .feature-card { background: var(--light-bg); border-radius: 12px; padding: 2rem; text-align: center; border: 1px solid #2a2a2a; transition: transform 0.3s ease; }
+    .feature-card:hover { transform: translateY(-5px); }
+    .feature-icon { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+    .feature-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+    .feature-description { color: var(--border-color); }
+    
+    .tier-card { background: var(--light-bg); border-radius: 12px; padding: 2.5rem; text-align: center; border: 1px solid #2a2a2a; transition: all 0.3s ease; position: relative; overflow: hidden; }
+    .tier-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+    .tier-card.featured { border: 2px solid var(--primary); transform: scale(1.05); }
+    .tier-card.featured:hover { transform: scale(1.05) translateY(-5px); }
+    .tier-badge { position: absolute; top: 0; right: 0; background: var(--primary); color: white; padding: 0.5rem 1.5rem; font-size: 0.8rem; font-weight: bold; border-bottom-left-radius: 12px; }
+    .tier-name { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--light-text); }
+    .tier-price { font-size: 3rem; font-weight: 700; color: var(--primary); margin-bottom: 1.5rem; }
+    .tier-price span { font-size: 1rem; color: var(--border-color); }
+    .tier-features { list-style: none; margin-bottom: 2rem; }
+    .tier-features li { margin-bottom: 0.8rem; color: var(--border-color); display: flex; align-items: center; justify-content: center; }
+    .tier-features li i { color: var(--primary); margin-right: 0.5rem; }
+    
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-item { background: var(--light-bg); border: 1px solid #2a2a2a; border-radius: 8px; margin-bottom: 1rem; overflow: hidden; }
+    .faq-question { padding: 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-question h3 { font-size: 1.2rem; font-weight: 600; color: var(--light-text); }
+    .faq-question i { color: var(--primary); transition: transform 0.3s ease; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .faq-answer p { padding: 0 1.5rem 1.5rem; color: var(--border-color); border-top: 1px solid #2a2a2a; padding-top: 1.5rem; }
+    .faq-item.active .faq-answer { max-height: 300px; /* Adjust as needed */ }
+    .faq-item.active .faq-question i { transform: rotate(180deg); }
+    
+    .testimonial-card { background: var(--light-bg); border-radius: 12px; padding: 1.5rem; margin: 1rem; border: 1px solid #2a2a2a; }
+    .testimonial-header { display: flex; align-items: center; margin-bottom: 1rem; }
+    .testimonial-avatar { width: 50px; height: 50px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 1rem; }
+    .testimonial-stars { color: #FFD700; margin-bottom: 0.5rem; }
+    .testimonial-text { color: var(--border-color); font-style: italic; }
+    
+    .commission-structure { background: var(--light-bg); border-radius: 12px; padding: 2rem; margin-top: 2rem; }
+    .commission-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .commission-table th, .commission-table td { padding: 1rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    .commission-table th { color: var(--primary); font-weight: 700; }
+    .commission-table tr:last-child td { border-bottom: none; }
+    
+    .affiliate-form { background: var(--light-bg); border-radius: 12px; padding: 2.5rem; margin-top: 2rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--light-text); }
+    .form-input { width: 100%; padding: 12px 15px; border-radius: 8px; border: 2px solid #444; background: var(--dark); color: white; font-size: 1rem; }
+    .form-input:focus { outline: none; border-color: var(--primary); }
+    
+    /* Success Modal Styles */
+    .success-modal { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background: rgba(0,0,0,0.8); 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      z-index: 1000; 
+      opacity: 0; 
+      visibility: hidden; 
+      transition: all 0.3s ease; 
+    }
+    .success-modal.active { 
+      opacity: 1; 
+      visibility: visible; 
+    }
+    .success-modal-content { 
+      background: var(--light-bg); 
+      border-radius: 12px; 
+      padding: 2.5rem; 
+      max-width: 500px; 
+      width: 90%; 
+      text-align: center; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+      transform: translateY(20px); 
+      transition: transform 0.3s ease; 
+    }
+    .success-modal.active .success-modal-content { 
+      transform: translateY(0); 
+    }
+    .success-icon { 
+      font-size: 4rem; 
+      color: var(--primary); 
+      margin-bottom: 1.5rem; 
+    }
+    .success-title { 
+      font-size: 1.8rem; 
+      font-weight: 700; 
+      margin-bottom: 1rem; 
+      color: var(--light-text); 
+    }
+    .success-message { 
+      color: var(--border-color); 
+      margin-bottom: 2rem; 
+    }
+    .application-receipt { 
+      background: var(--dark); 
+      border-radius: 8px; 
+      padding: 1.5rem; 
+      margin-bottom: 2rem; 
+      text-align: left; 
+    }
+    .receipt-title { 
+      font-weight: 700; 
+      color: var(--primary); 
+      margin-bottom: 1rem; 
+      text-align: center; 
+    }
+    .receipt-item { 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 0.5rem; 
+    }
+    .receipt-label { 
+      font-weight: 600; 
+    }
+    .receipt-value { 
+      color: var(--border-color); 
+    }
+    
+    @media (max-width: 768px) {
+      .section-title { font-size: 2rem; }
+      .tier-card.featured { transform: scale(1); }
+      .tier-card.featured:hover { transform: translateY(-5px); }
+      .success-modal-content { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-dark backdrop-blur border-b border-primary">
+    <div class="container py-3 flex items-center justify-between">
+      <a href="https://www.growzio.online" class="font-extrabold text-xl text-white flex items-center">
+        <span class="text-primary mr-1">🔥</span> GROWZIO
+      </a>
+      
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="https://www.growzio.online" class="nav-link hover:text-primary">Home</a>
+        <a href="#about" class="nav-link hover:text-primary">About Program</a>
+        <a href="#benefits" class="nav-link hover:text-primary">Benefits</a>
+        <a href="#tiers" class="nav-link hover:text-primary">Commission Tiers</a>
+        <a href="#faq" class="nav-link hover:text-primary">FAQ</a>
+        <a href="#contact" class="nav-link hover:text-primary">Join Now</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://www.growzio.online" class="btn btn-outline">Back to Store</a>
+        <button id="mobile-toggle" class="md:hidden p-2 rounded-md border border-primary text-primary">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="bg-dark/80 border-t border-primary md:hidden hidden">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="https://www.growzio.online" class="py-2 nav-link">Home</a>
+        <a href="#about" class="py-2 nav-link">About Program</a>
+        <a href="#benefits" class="py-2 nav-link">Benefits</a>
+        <a href="#tiers" class="py-2 nav-link">Commission Tiers</a>
+        <a href="#faq" class="py-2 nav-link">FAQ</a>
+        <a href="#contact" class="py-2 nav-link">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section hero-section text-white">
+    <div class="container text-center">
+      <h1 class="section-title mb-4 text-white" data-aos="fade-down">GROWZIO AFFILIATE PROGRAM</h1>
+      <p class="section-subtitle text-gray-200" data-aos="fade-up" data-aos-delay="200">Earn 20-30% commission by reselling premium app subscriptions. Join Pakistan's fastest-growing digital reseller network.</p>
+      
+      <div class="flex flex-wrap justify-center gap-4 mb-8" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-primary/20 rounded-lg p-3 flex items-center gap-2"> <i class="fa-solid fa-money-bill-wave text-primary"></i> <span>Up to 30% Commission</span> </div>
+        <div class="bg-primary/20 rounded-lg p-3 flex items-center gap-2"> <i class="fa-solid fa-bolt text-primary"></i> <span>Instant Payouts</span> </div>
+        <div class="bg-primary/20 rounded-lg p-3 flex items-center gap-2"> <i class="fa-solid fa-chart-line text-primary"></i> <span>Performance Bonuses</span> </div>
+      </div>
+      
+      <div class="flex justify-center gap-4" data-aos="fade-up" data-aos-delay="600">
+        <a href="#contact" class="btn">Join Now</a>
+        <a href="#tiers" class="btn btn-outline">View Commission Tiers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Program Section -->
+  <section id="about" class="section bg-lightbg">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">About Our Affiliate Program</h2>
+        <p class="section-subtitle">Join Pakistan's most rewarding digital reseller program</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 items-center mt-8" data-aos="fade-up" data-aos-delay="200">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Earn Money With GROWZIO</h3>
+          <p class="text-gray-300 mb-4">Our affiliate program is designed for individuals and businesses who want to earn substantial commissions by reselling premium digital subscriptions. Whether you're a student, freelancer, or established business, our program offers a lucrative opportunity.</p>
+          <p class="text-gray-300 mb-4">With competitive commission rates, instant payouts, and comprehensive support, GROWZIO provides everything you need to build a successful reselling business.</p>
+          <div class="bg-primary/10 p-4 rounded-lg border-l-4 border-primary">
+            <p class="text-gray-300"><strong>No Startup Costs:</strong> Join completely free with no hidden fees or minimum requirements.</p>
+          </div>
+        </div>
+        <div class="bg-dark p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">How It Works</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">1</div>
+              <div>
+                <h4 class="font-bold mb-1">Sign Up</h4>
+                <p class="text-gray-300">Register for free and get your unique affiliate link</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">2</div>
+              <div>
+                <h4 class="font-bold mb-1">Promote</h4>
+                <p class="text-gray-300">Share your link with customers via social media, WhatsApp, or your website</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">3</div>
+              <div>
+                <h4 class="font-bold mb-1">Earn</h4>
+                <p class="text-gray-300">Get 20-30% commission on every successful sale through your link</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">4</div>
+              <div>
+                <h4 class="font-bold mb-1">Withdraw</h4>
+                <p class="text-gray-300">Receive instant payouts via JazzCash, Easypaisa, or Bank Transfer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section bg-dark">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Why Join GROWZIO Affiliates?</h2>
+        <p class="section-subtitle">We offer the most affiliate-friendly program in Pakistan</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fa-solid fa-money-bill-trend-up"></i>
+          </div>
+          <h3 class="feature-title">High Commissions</h3>
+          <p class="feature-description">Earn 20-30% on every sale with performance-based bonuses for top sellers.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="feature-title">Instant Payouts</h3>
+          <p class="feature-description">Get paid immediately after order completion via JazzCash, Easypaisa or Bank Transfer.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="feature-title">Real-time Analytics</h3>
+          <p class="feature-description">Track your sales, commissions, and performance with our detailed dashboard.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="feature-title">Marketing Support</h3>
+          <p class="feature-description">Get access to ready-to-use marketing materials, banners, and promotional content.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <h3 class="feature-title">Exclusive Bonuses</h3>
+          <p class="feature-description">Earn special bonuses for reaching sales milestones and during promotional periods.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="feature-title">Dedicated Support</h3>
+          <p class="feature-description">Get 24/7 support from our affiliate managers to help maximize your earnings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commission Tiers Section -->
+  <section id="tiers" class="section bg-lightbg">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Commission Tiers</h2>
+        <p class="section-subtitle">Your commission increases with your sales volume</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 mt-8">
+        <div class="tier-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="tier-name">Starter</div>
+          <div class="tier-price">20% <span>Commission</span></div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check"></i> Up to 5 sales per month</li>
+            <li><i class="fa-solid fa-check"></i> Basic affiliate dashboard</li>
+            <li><i class="fa-solid fa-check"></i> Standard support</li>
+            <li><i class="fa-solid fa-check"></i> Marketing materials</li>
+            <li><i class="fa-solid fa-check"></i> Weekly payouts</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline w-full">Get Started</a>
+        </div>
+        
+        <div class="tier-card featured" data-aos="fade-up" data-aos-delay="300">
+          <div class="tier-badge">MOST POPULAR</div>
+          <div class="tier-name">Pro</div>
+          <div class="tier-price">25% <span>Commission</span></div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check"></i> 6-15 sales per month</li>
+            <li><i class="fa-solid fa-check"></i> Advanced dashboard</li>
+            <li><i class="fa-solid fa-check"></i> Priority support</li>
+            <li><i class="fa-solid fa-check"></i> Custom marketing materials</li>
+            <li><i class="fa-solid fa-check"></i> 3-day payouts</li>
+          </ul>
+          <a href="#contact" class="btn w-full">Join Pro Tier</a>
+        </div>
+        
+        <div class="tier-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="tier-name">Elite</div>
+          <div class="tier-price">30% <span>Commission</span></div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check"></i> 16+ sales per month</li>
+            <li><i class="fa-solid fa-check"></i> Premium dashboard</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+            <li><i class="fa-solid fa-check"></i> Exclusive promotions</li>
+            <li><i class="fa-solid fa-check"></i> Instant payouts</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline w-full">Become Elite</a>
+        </div>
+      </div>
+      
+      <div class="commission-structure" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-2xl font-bold mb-4 text-center">Detailed Commission Structure</h3>
+        <div class="overflow-x-auto">
+          <table class="commission-table">
+            <thead>
+              <tr>
+                <th>Monthly Sales</th>
+                <th>Commission Rate</th>
+                <th>Payout Frequency</th>
+                <th>Special Benefits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-5 sales</td>
+                <td>20%</td>
+                <td>Weekly</td>
+                <td>Basic marketing materials</td>
+              </tr>
+              <tr>
+                <td>6-15 sales</td>
+                <td>25%</td>
+                <td>Every 3 days</td>
+                <td>Custom banners, priority support</td>
+              </tr>
+              <tr>
+                <td>16-30 sales</td>
+                <td>30%</td>
+                <td>Instant</td>
+                <td>Dedicated manager, exclusive offers</td>
+              </tr>
+              <tr>
+                <td>31+ sales</td>
+                <td>30% + Bonuses</td>
+                <td>Instant</td>
+                <td>Performance bonuses, VIP status</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section bg-dark">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">What Our Affiliates Say</h2>
+        <p class="section-subtitle">Hear from successful GROWZIO affiliates</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">AR</div>
+            <div>
+              <h4 class="font-bold">Ahmed R.</h4>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text">"I've been with GROWZIO for 6 months and earned over 25,000 PKR. The instant payouts and high commission rates make this the best affiliate program in Pakistan."</p>
+        </div>
+        
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">SF</div>
+            <div>
+              <h4 class="font-bold">Sara F.</h4>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text">"As a student, this program has been a game-changer. I promote to my university friends and earn enough to cover my expenses. The support team is always helpful."</p>
+        </div>
+        
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">BK</div>
+            <div>
+              <h4 class="font-bold">Bilal K.</h4>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text">"I run a small digital marketing agency and GROWZIO has become our top revenue stream. The 30% commission at Elite tier is unmatched in the industry."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section bg-lightbg">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about our affiliate program</p>
+      </div>
+      <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How do I join the GROWZIO Affiliate Program?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Simply fill out the application form on this page. Our team will review your application and get back to you within 24 hours with your affiliate dashboard access and unique referral link.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How much commission will I earn?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Commission rates range from 20% to 30% depending on your sales volume. New affiliates start at 20%, and you can progress to higher tiers as your sales increase.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How and when will I get paid?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Payouts are processed via JazzCash, Easypaisa, or Bank Transfer. Payout frequency depends on your tier: Weekly for Starter, every 3 days for Pro, and instantly for Elite affiliates.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is there any cost to join?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>No, joining our affiliate program is completely free. There are no hidden fees or minimum requirements to get started.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What marketing materials do you provide?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We provide banners, social media posts, WhatsApp templates, and promotional content that you can use to promote GROWZIO. Higher tiers get access to custom marketing materials.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I track my performance?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, you'll get access to a personalized affiliate dashboard where you can track clicks, conversions, commissions, and payout history in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Ready to Start Earning?</h2>
+        <p class="section-subtitle">Join our affiliate program today and start earning commissions</p>
+      </div>
+      
+      <div class="max-w-2xl mx-auto">
+        <div class="affiliate-form" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-2xl font-bold mb-6 text-center">Apply Now</h3>
+          <form id="affiliate-application">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+                <input type="text" id="first-name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input type="text" id="last-name" class="form-input" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="city">City</label>
+              <input type="text" id="city" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="commission-tier">Select Your Desired Commission Tier</label>
+              <select id="commission-tier" class="form-input" required>
+                <option value="">Choose a commission tier</option>
+                <option value="Starter (20% Commission)">Starter - 20% Commission (1-5 sales/month)</option>
+                <option value="Pro (25% Commission)">Pro - 25% Commission (6-15 sales/month)</option>
+                <option value="Elite (30% Commission)">Elite - 30% Commission (16+ sales/month)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="experience">Do you have previous affiliate/reselling experience?</label>
+              <select id="experience" class="form-input" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="promotion-methods">How do you plan to promote our services?</label>
+              <textarea id="promotion-methods" class="form-input" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn w-full">Submit Application</button>
+          </form>
+        </div>
+        
+        <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
+          <p class="text-gray-300 mb-4">Have questions before applying?</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://wa.me/923195179084" target="_blank" class="btn btn-outline">
+              <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+            </a>
+            <a href="mailto:growzioteam@gmail.com" class="btn btn-outline">
+              <i class="fa-solid fa-envelope mr-2"></i> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-gray-300 py-12 border-t border-gray-800">
+    <div class="container">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-white text-lg font-bold mb-4">GROWZIO</h3>
+          <p class="mb-4">Your trusted source for premium digital services in Pakistan at affordable prices.</p>
+          <div class="text-sm">
+            <p><strong>Registered Business:</strong></p>
+            <p>GROWZIO PVT LTD</p>
+            <p>TRN: 41-022-8124-9</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white text-lg font-bold mb-4">AFFILIATE PROGRAM</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-gray-300 hover:text-primary">About Program</a></li>
+            <li><a href="#benefits" class="text-gray-300 hover:text-primary">Benefits</a></li>
+            <li><a href="#tiers" class="text-gray-300 hover:text-primary">Commission Tiers</a></li>
+            <li><a href="#faq" class="text-gray-300 hover:text-primary">FAQ</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-primary">Join Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white text-lg font-bold mb-4">SUPPORT</h3>
+          <ul class="space-y-2">
+            <li><a href="https://www.growzio.online" class="text-gray-300 hover:text-primary">Main Store</a></li>
+            <li><a href="http://privacypolicy.growzio.online/" target="_blank" class="text-gray-300 hover:text-primary">Privacy Policy</a></li>
+            <li><a href="http://termsofservices.growzio.online/" target="_blank" class="text-gray-300 hover:text-primary">Terms of Service</a></li>
+            <li><a href="https://refundpolicy.growzio.online/" target="_blank" class="text-gray-300 hover:text-primary">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white text-lg font-bold mb-4">CONTACT</h3>
+          <p class="mb-2"><i class="fa-brands fa-whatsapp text-green-500 mr-2"></i> WhatsApp: +92 319 5179084</p>
+          <p class="mb-2"><i class="fa-solid fa-envelope text-primary mr-2"></i> Email: growzioteam@gmail.com</p>
+          <p class="mb-4"><i class="fa-solid fa-location-dot text-primary mr-2"></i> Office #12, DHA Phase 6, Karachi</p>
+          <p class="text-sm">24/7 Support Available</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p>© 2025 GROWZIO. All rights reserved. Registered Business: GROWZIO PVT LTD - TRN: 41-022-8124-9</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="success-modal" id="success-modal">
+    <div class="success-modal-content">
+      <div class="success-icon">
+        <i class="fa-solid fa-check-circle"></i>
+      </div>
+      <h2 class="success-title">Application Submitted!</h2>
+      <p class="success-message">Your affiliate application has been received successfully.</p>
+      
+      <div class="application-receipt" id="application-receipt">
+        <div class="receipt-title">Application Receipt</div>
+        <div class="receipt-item">
+          <span class="receipt-label">Application ID:</span>
+          <span class="receipt-value" id="receipt-id">GROW-AFF-001</span>
+        </div>
+        <div class="receipt-item">
+          <span class="receipt-label">Date:</span>
+          <span class="receipt-value" id="receipt-date">Loading...</span>
+        </div>
+        <div class="receipt-item">
+          <span class="receipt-label">Name:</span>
+          <span class="receipt-value" id="receipt-name">Loading...</span>
+        </div>
+        <div class="receipt-item">
+          <span class="receipt-label">Email:</span>
+          <span class="receipt-value" id="receipt-email">Loading...</span>
+        </div>
+        <div class="receipt-item">
+          <span class="receipt-label">Phone:</span>
+          <span class="receipt-value" id="receipt-phone">Loading...</span>
+        </div>
+        <div class="receipt-item">
+          <span class="receipt-label">Commission Tier:</span>
+          <span class="receipt-value" id="receipt-tier">Loading...</span>
+        </div>
+        <div class="receipt-item">
+          <span class="receipt-label">Status:</span>
+          <span class="receipt-value" style="color: var(--primary);">Pending Review</span>
+        </div>
+      </div>
+      
+      <p class="success-message">We've redirected you to WhatsApp with your application details. Please keep this receipt for your records.</p>
+      
+      <div class="flex gap-4">
+        <button class="btn btn-outline flex-1" id="close-modal">Close</button>
+        <button class="btn flex-1" id="open-whatsapp">
+          <i class="fa-brands fa-whatsapp mr-2"></i> Open WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923195179084" target="_blank" class="whatsapp-float" style="position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background: #25D366; color: #fff; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 0 15px rgba(37, 211, 102, 0.35); z-index: 1000; display: flex; align-items: center; justify-content: center; animation: pulse 2s infinite;">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({ duration: 800, once: true });
+      
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll('.faq-question');
+      faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const parent = item.parentElement;
+          parent.classList.toggle('active');
+        });
+      });
+      
+      // Mobile menu toggle
+      document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+        this.querySelector('i').classList.toggle('fa-bars');
+        this.querySelector('i').classList.toggle('fa-times');
+      });
+      
+      // Generate a unique application ID
+      function generateApplicationId() {
+        const timestamp = new Date().getTime().toString().slice(-6);
+        const random = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
+        return `GROW-AFF-${timestamp}${random}`;
+      }
+      
+      // Format date for receipt
+      function formatDate(date) {
+        const options = { 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        };
+        return date.toLocaleDateString('en-US', options);
+      }
+      
+      // Form submission
+      document.getElementById('affiliate-application').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+          firstName: document.getElementById('first-name').value,
+          lastName: document.getElementById('last-name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          city: document.getElementById('city').value,
+          commissionTier: document.getElementById('commission-tier').value,
+          experience: document.getElementById('experience').value,
+          promotionMethods: document.getElementById('promotion-methods').value
+        };
+        
+        // Generate application details
+        const applicationId = generateApplicationId();
+        const applicationDate = new Date();
+        
+        // Update receipt in modal
+        document.getElementById('receipt-id').textContent = applicationId;
+        document.getElementById('receipt-date').textContent = formatDate(applicationDate);
+        document.getElementById('receipt-name').textContent = `${formData.firstName} ${formData.lastName}`;
+        document.getElementById('receipt-email').textContent = formData.email;
+        document.getElementById('receipt-phone').textContent = formData.phone;
+        document.getElementById('receipt-tier').textContent = formData.commissionTier;
+        
+        // Create WhatsApp message with formatted receipt
+        const message = `🔥 *NEW AFFILIATE APPLICATION - GROWZIO* 🔥%0A%0A` +
+          `*Application ID:* ${applicationId}%0A` +
+          `*Date:* ${formatDate(applicationDate)}%0A%0A` +
+          `*PERSONAL DETAILS*%0A` +
+          `Name: ${formData.firstName} ${formData.lastName}%0A` +
+          `Email: ${formData.email}%0A` +
+          `Phone: ${formData.phone}%0A` +
+          `City: ${formData.city}%0A%0A` +
+          `*AFFILIATE INFORMATION*%0A` +
+          `Commission Tier: ${formData.commissionTier}%0A` +
+          `Previous Experience: ${formData.experience}%0A` +
+          `Promotion Methods: ${formData.promotionMethods}%0A%0A` +
+          `*APPLICATION STATUS:* Pending Review%0A%0A` +
+          `This application was submitted via the GROWZIO Affiliate Program website.`;
+        
+        const whatsappURL = `https://wa.me/923195179084?text=${message}`;
+        
+        // Store WhatsApp URL for later use
+        document.getElementById('open-whatsapp').setAttribute('data-url', whatsappURL);
+        
+        // Show success modal
+        document.getElementById('success-modal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Reset form
+        this.reset();
+      });
+      
+      // Close modal
+      document.getElementById('close-modal').addEventListener('click', function() {
+        document.getElementById('success-modal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+      
+      // Open WhatsApp from modal
+      document.getElementById('open-whatsapp').addEventListener('click', function() {
+        const url = this.getAttribute('data-url');
+        window.open(url, '_blank');
+        document.getElementById('success-modal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+    });
+</script>
+
+</body>
+</html>
